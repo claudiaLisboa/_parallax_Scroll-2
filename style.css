@@ -5,37 +5,41 @@
 }
 
 body,html{
-  
-    color: rgb(90,70,63);
 
+    font-family: 'JetBrains Mono', monospace;
     height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "JetBrains Mono", monospace;
-  color: #777;
+    color: rgb(90,70,63);
+    /* color: rgb(90,70,63); */
+
+
 }
 
 
+p{
+    text-align: center;
+    margin: 20px;
+}
 
-.parallax {
-    /* The image used */
-    background-image: url('/img/bg_holland.webp');
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 12px;
+.card {
+    
+    padding: 50px;
     margin:0px 15px 0px 15px;
+   height:1000px;
+   background-color:whitesmoke;
+   border: 5px ;
+   border-style: dashed;
+   border-color: rgb(251,154,23);
+   border-radius: 12px;
+  
+   font-size:26px"
 }
+  
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
@@ -47,17 +51,17 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("img_parallax.jpg");
+  background-image: url('/img/bgimg-1.webp');
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("img_parallax2.jpg");
+  background-image: url('/img/bgimg-2.jpeg');
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("img_parallax3.jpg");
+  background-image: url('/img/bgimg-3.jpeg');
   min-height: 400px;
 }
 
@@ -89,5 +93,8 @@ h3 {
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
+
   }
-}
+ }
+
+ 
